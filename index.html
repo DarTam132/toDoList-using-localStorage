@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>This is my todo list</h1>
+    <button id="modal" class="btn">New note</button>
+    <form id="form" class="hidden">
+      <input
+        type="text"
+        class="input"
+        id="input-title"
+        placeholder="Note title"
+        autocomplete="off"
+      />
+      <textarea
+        class="input"
+        id="input-text"
+        cols="30"
+        rows="5"
+        placeholder="Note text"
+      ></textarea>
+
+      <div class="btns">
+        <button class="btn" id="add-btn">Add note</button>
+      </div>
+    </form>
+
+    <div>
+      <h1>Todo list items</h1>
+      <ul class="final-list" id="final-list"></ul>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
